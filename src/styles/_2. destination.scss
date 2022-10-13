@@ -1,0 +1,120 @@
+.destination {
+
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include min-width(medium) {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+
+    };
+    @include min-width(large) {
+        background-image: url('../assets/destination/background-destination-desktop.jpg');
+
+    };
+
+    &__content {
+        padding: 20vh 1.75rem 0;
+
+        @include min-width(large) {
+            padding-inline: 8.5rem;
+        }
+    }
+
+    &__main {
+
+        @include min-width(large) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        &__img {
+
+            margin: 2rem auto;
+            width: 65vw;
+            max-width: 350px;
+
+            @include min-width(large) {
+                margin: 0;
+                width: 27vw;
+                max-width: 450px;
+            }
+
+        }
+    }
+
+
+    // options to change planet in view
+    &__options {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 1.5rem auto;
+        text-transform: uppercase;
+        max-width: 400px;
+
+        @include min-width(large) {
+            justify-content: start;
+            margin-inline: 0;
+        }
+    }
+
+    // individual options
+    &__option {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        padding-block: 1rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 3.5px;
+            background-color: $grey;
+            transition: all 0.5s;
+            transform: translateX(100%);
+        }
+
+        &:hover::after {
+            transform: translateX(-105%);
+        }
+
+        &.active::after {
+            transform: translateX(-105%);
+            background-color: $white;
+        }
+    }
+
+
+    &__info1 {
+        max-width: 450px;
+        min-height: 185px;
+        margin: 0 auto 2rem;
+
+        .description {
+            min-height: 130px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $grey;
+            }
+            @include max-width(medium) {
+                min-height: 160px;
+            };
+            @include min-width(large){padding-bottom: 1.5rem;}
+        }
+    }
+}

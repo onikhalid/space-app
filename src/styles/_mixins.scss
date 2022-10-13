@@ -1,0 +1,29 @@
+//Maps for media queries mixins
+$breakpoints-up: (
+   "medium": "800px",
+   "large": "1023px",
+   "xlarge": "1399px",
+);
+
+$breakpoints-down: (
+   "small": "799px",
+   "medium": "1024px",
+   "large": "1400px",
+);
+
+@mixin min-width($size) {
+   @media (min-width: map-get($map: $breakpoints-up, $key: $size)) {
+      @content;
+   }
+}
+
+@mixin max-width($size) {
+   @media (max-width: map-get($map: $breakpoints-down, $key: $size)) {
+      @content;
+   }
+}
+@mixin customQuery($type, $size) {
+   @media ($type: $size) {
+      @content;
+   }
+}

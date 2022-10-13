@@ -1,0 +1,116 @@
+.tech {
+
+    background-image: url('../assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    @include min-width(medium) {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    };
+
+    @include min-width(large) {
+        background-image: url('../assets/technology/background-technology-desktop.jpg');
+        max-height: 100vh;
+        overflow: hidden
+    };
+
+    &__content {
+        padding: 20vh 0 0;
+
+        @include min-width(large) {
+            padding-inline: 8.5rem 0;
+        }
+    }
+
+    &__main {
+
+        @include min-width(large) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 12.5vh;
+        }
+
+        //////tech picture//////
+        &__img {
+            position: relative;
+            margin: 3rem auto;
+            width: 100vw;
+
+
+            @include min-width(large) {
+                margin: 0;
+                width: 40vw;
+                max-width: 450px;
+                transform: translateY(-25%);
+            }
+        }
+
+
+        ///////////////
+        //// TEXTS////
+        ///////////////
+        &__text {
+            max-width: 530px;
+            margin: 0 auto;
+            padding-inline: 1.75rem;
+
+            @include min-width(large) {
+                display: flex;
+                flex-direction: row;
+                gap: min(6vw, 3.5rem);
+                align-items: flex-start;
+                margin-left: 0;
+            }
+            
+            // options to change tech in view
+            &-options {
+                display: flex;
+                align-items: flex-start;
+                gap: 1.5rem;
+                justify-content: center;
+                margin: 1.5rem auto;
+                text-transform: uppercase;
+                max-width: 400px;
+                
+                @include min-width(large) {
+                    flex-direction: column;
+                    justify-content: start;
+                }
+            }
+
+            // individual options
+            &-option {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                height: 2.15rem;
+                width: 2.15rem;
+                border: solid 1px $white;
+                border-radius: 50%;
+                background-color: transparent;
+                transition: background-color ease-in-out 250ms;
+                font-family: 'Bellefair';
+                
+                &.active {
+                    background-color: $white;
+                    color: $blue;
+                }
+                
+                @include min-width(large) {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .vehicle{
+                margin-top: 1.1rem;
+            }
+        }
+    }
+}

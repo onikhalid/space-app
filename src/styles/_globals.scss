@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;500;600&family=Bellefair&display=swap');
+
+*, *::before, ::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow';
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+
+    @include min-width(large){ text-align: left;}
+}
+body{
+    background: $blue;
+    transition: all ease 300ms;
+}
+a{
+    text-decoration: none;
+}
+a:focus-visible{
+    text-decoration: none;
+    margin: 0;
+    outline: 0;
+    border: 0;
+}
+img{
+    max-width: 100%;
+}
+
+// TYPOGRAPHY
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+h1{
+    font-size: clamp(3rem, 5.5vw, 4.2rem);
+    font-family: 'Bellefair';
+}
+h1.home__heading{
+    font-size: 7.5rem;
+    @include max-width(small){ font-size: 5.5rem;}    
+}
+h2{
+    font-family: 'Bellefair';
+    font-size: clamp(2.5rem, 4vw, 3.8rem);
+}
+h3{
+    font-family: 'Bellefair';
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-block: 0.5rem 1rem;
+    
+}
+h4{
+    font-family: 'Bellefair';
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    color: $grey;
+}
+h5{
+    font-family: "Barlow Condensed";
+    font-weight: lighter;
+    font-size: 1rem;
+    color: $lightBlue;
+    letter-spacing: 4.75px;
+    
+    span{
+        color: $grey;
+        margin-right: 0.75rem;
+        font-family: "Barlow Condensed";
+        font-weight: 700;
+        letter-spacing: 1;
+    }
+}
+h6{
+    font-family: "Barlow Condensed";
+    font-weight: lighter;
+    font-size: 0.8rem;
+    color: $lightBlue;
+    letter-spacing: 2.7px;
+}
+p{
+    line-height: 2;
+    color: $lightBlue;
+}
