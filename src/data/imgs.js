@@ -14,8 +14,8 @@ import sLaunch from "../assets/technology/image-launch-vehicle-portrait.jpg";
 import bLaunch from "../assets/technology/image-launch-vehicle-landscape.jpg";
 import sCapsule from "../assets/technology/image-space-capsule-portrait.jpg";
 import bCapsule from "../assets/technology/image-space-capsule-landscape.jpg";
-import sPort from "../assets/technology/image-space-capsule-portrait.jpg";
-import bPort from "../assets/technology/image-space-capsule-landscape.jpg";
+import sPort from "../assets/technology/image-spaceport-portrait.jpg";
+import bPort from "../assets/technology/image-spaceport-landscape.jpg";
 
 
 export const imgs ={
