@@ -73,7 +73,7 @@ const Crew = () => {
                   key={img}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.05 }}
                >
-                  <img src={img} alt="" />
+                  <img src={img} alt={role} />
                </motion.div>
                <div className="crew__main__text">
                   <div className="crew__main__text-options">

@@ -21,7 +21,7 @@ const Destination = () => {
                      key={currentPlanet}
                      transition={{ duration: 0.5, ease: 'easeOut', delay: 0.05 }}
                   >
-                     <img src={img} alt="" />
+                     <img src={img} alt="planet" />
                   </motion.div>
                   <div className="destination__main__text">
                      <div className="destination__options">
