@@ -18,12 +18,10 @@ const Technology = () => {
       { 
          initial:{ x: "100%", opacity: 0 },
          animate:{ x: "0%", opacity: 1 },
-         transition:{duration: 0.75, ease: 'easeOut'}
       }
       : { 
          initial:{ y: "100%", opacity: 0 },
          animate:{ y: "-10%", opacity: 1 },
-         transition:{duration: 0.75, ease: 'ease'}
       }
     
     
@@ -39,7 +37,7 @@ const Technology = () => {
                   variants={variants}
                   initial="initial"
                   animate="animate"
-                  transition="transition"
+                  transition={{duration: 0.65, ease: 'easeOut'}}
                   key={description}
                >
                   <img src={width < 1024 ? images.landscape : images.portrait} alt="vehicle technology" />

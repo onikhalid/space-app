@@ -71,7 +71,7 @@ const Crew = () => {
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   key={img}
-                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.05 }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
                >
                   <img src={img} alt={role} />
                </motion.div>
