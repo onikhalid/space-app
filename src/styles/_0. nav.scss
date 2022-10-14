@@ -3,12 +3,10 @@
 .nav{
     position: fixed;
     display: flex;
-    justify-content: start;
-    margin: 0 auto;
     margin-top: 2rem;
     align-items: center;
     width: 100%;
-    z-index: 2;
+    z-index: 12;
 
     &__logo{
         margin-left: 5rem;

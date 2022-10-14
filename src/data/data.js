@@ -5,7 +5,7 @@ const {
    moon, mars, europa, titan,
    commander, specialist, pilot, engineer,
    sLaunch, bLaunch, sCapsule, bCapsule, sPort, bPort
-} =imgs
+} = imgs
 
 const logo = {
    img: logoo
