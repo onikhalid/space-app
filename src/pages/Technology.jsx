@@ -16,7 +16,7 @@ const Technology = () => {
 
    const variants = width < 1023 ? 
       { 
-         initial:{ x: "100%", opacity: 0 },
+         initial:{ x: "-100%", opacity: 0 },
          animate:{ x: "0%", opacity: 1 },
       }
       : { 
