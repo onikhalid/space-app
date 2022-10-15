@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;500;600&family=Bellefair&display=swap');
 
+html{
+
+    font-size: 1.1rem;
+}
+
 *, *::before, ::after{
     margin: 0;
     padding: 0;
@@ -13,6 +18,10 @@
 body{
     background: $blue;
     transition: all ease 300ms;
+}
+.container{
+    max-width: 1920px;
+    margin-inline: auto;
 }
 a{
     text-decoration: none;
@@ -32,7 +41,7 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 h1{
-    font-size: clamp(3rem, 5.5vw, 4.2rem);
+    font-size: clamp(3rem, 5.5vw, 5rem);
     font-family: 'Bellefair';
 }
 h1.home__heading{
@@ -41,23 +50,23 @@ h1.home__heading{
 }
 h2{
     font-family: 'Bellefair';
-    font-size: clamp(2.5rem, 4vw, 3.8rem);
+    font-size: clamp(2.5rem, 4vw, 4.2rem);
 }
 h3{
     font-family: 'Bellefair';
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
     margin-block: 0.5rem 1rem;
     
 }
 h4{
     font-family: 'Bellefair';
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.5rem, 2vw, 2.75rem);
     color: $grey;
 }
 h5{
     font-family: "Barlow Condensed";
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1vw, 1.5rem);
     color: $lightBlue;
     letter-spacing: 4.75px;
     

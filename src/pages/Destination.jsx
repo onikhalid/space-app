@@ -10,7 +10,7 @@ const Destination = () => {
    return (
       <AnimatePresence>
          <div className="destination">
-            <div className="destination__content">
+            <div className="destination__content container">
                <h5><span>01</span>Pick your destination</h5>
                <div className="destination__main">
                   <motion.div

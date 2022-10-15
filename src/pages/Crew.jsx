@@ -63,7 +63,7 @@ const Crew = () => {
          onTouchStart={handleTouchStart}
          onTouchMove={handleTouchMove}
       >
-         <div className="crew__content">
+         <div className="crew__content container">
             <h5><span>02</span>Meet your Crew</h5>
             <div className="crew__main">
                <motion.div 

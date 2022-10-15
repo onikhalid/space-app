@@ -27,7 +27,7 @@ const Technology = () => {
     
    return (
       <div className="tech" tabIndex={0}>
-         <div className="tech__content">
+         <div className="tech__content container">
             <h5><span>03</span>Space Launch 101</h5>
             <div className="tech__main">
 

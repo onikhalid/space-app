@@ -21,7 +21,7 @@
         @include customQuery(min-width, 980px){
             flex-direction: row;
             justify-content: space-between;
-            padding: 15rem 9.5rem 2rem;
+            padding: 30vh 9.5rem 2rem;
             align-items: center
         };
     }
@@ -68,6 +68,12 @@
 
         @include max-width(small){
             margin: 5vh auto ;
+        };
+        @include min-width(large){
+            width: 18.5vw;
+            height: 18.5vw;
+            max-width: 300px;
+            max-height: 300px;
         };
     }
 }

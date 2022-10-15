@@ -6,7 +6,7 @@ const navigate = useNavigate()
 
    return (
       <div className="home">
-         <div className="home__content">
+         <div className="home__content container">
             <div className="home__text">
                <h5>So, you want to travel to</h5>
                <h1 className="home__heading">Space</h1>
